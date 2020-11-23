@@ -5,7 +5,7 @@ dependencies:
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
   react-scripts: 4.0.1
-  web-vitals: 0.2.4
+  web-vitals: 1.0.1
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.10.4:
@@ -11622,10 +11622,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==
-  /web-vitals/0.2.4:
+  /web-vitals/1.0.1:
     dev: false
     resolution:
-      integrity: sha512-6BjspCO9VriYy12z356nL6JBS0GYeEcA457YyRzD+dD6XYCQ75NKhcOHUMHentOE7OcVCIXXDvOm0jKFfQG2Gg==
+      integrity: sha512-io/H/D18edTL1D2lcaUTLNLFEVZIPhNd4IdXDB9bEb+uDv2m/6NfyHiXKLFjbmI1ubeYpoQpR1gl9nlcWdI0vA==
   /webidl-conversions/5.0.0:
     dev: false
     engines:
@@ -12143,10 +12143,10 @@ packages:
     resolution:
       integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==
 specifiers:
-  '@testing-library/jest-dom': ^5.11.4
-  '@testing-library/react': ^11.1.0
-  '@testing-library/user-event': ^12.1.10
+  '@testing-library/jest-dom': ^5.11.6
+  '@testing-library/react': ^11.2.2
+  '@testing-library/user-event': ^12.2.2
   react: ^17.0.1
   react-dom: ^17.0.1
   react-scripts: 4.0.1
-  web-vitals: ^0.2.4
+  web-vitals: ^1.0.1
