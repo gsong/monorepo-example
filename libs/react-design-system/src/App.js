@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+/** @jsxRuntime classic */
+/** @jsx jsx */
+import * as React from "react";
+import { ThemeProvider, jsx, useThemeUI } from "theme-ui";
 
-function App() {
+import { text, theme } from "./theme.js";
+
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <p sx={text.xl5}>Hello</p>
+    <ThemePrinter />
+  </ThemeProvider>
+);
+
+const ThemePrinter = () => {
+  const { theme } = useThemeUI();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <h2 sx={text.xl2}>Theme Specification</h2>
+      <pre>{JSON.stringify(theme, null, 2)}</pre>
+    </React.Fragment>
   );
-}
+};
 
 export default App;
