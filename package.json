@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gsong/monorepo-example/issues"
   },
-  "homepage": "https://github.com/gsong/monorepo-example#readme"
+  "homepage": "https://github.com/gsong/monorepo-example#readme",
+  "devDependencies": {
+    "pnpm": "^5.13.4"
+  }
 }
