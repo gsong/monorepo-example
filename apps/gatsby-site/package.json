@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-mdx-basic",
+  "name": "@edb/gatsby-site",
   "description": "Gatsby starter MDX basic",
   "version": "1.0.0",
   "author": "Chris Biscardi <chris@christopherbiscardi.com>",
   "dependencies": {
+    "@edb/react-design-system": "workspace:^0.1.0",
     "@mdx-js/mdx": "^1.6.21",
     "@mdx-js/react": "^1.6.21",
     "gatsby": "^2.27.0",
