@@ -4,9 +4,11 @@ import * as React from "react";
 import { ThemeProvider, jsx, useThemeUI } from "theme-ui";
 
 import { text, theme } from "./theme.js";
+import Button from "./Button";
 
 const App = () => (
   <ThemeProvider theme={theme}>
+    <Button>Hi</Button>
     <p sx={text.xl5}>Hello</p>
     <ThemePrinter />
   </ThemeProvider>
