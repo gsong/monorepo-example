@@ -14,10 +14,13 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build-storybook": "build-storybook -s public",
+    "eject": "react-scripts eject",
+    "postinstall": "patch-package",
+    "start": "react-scripts start",
+    "storybook": "start-storybook -p 6006 -s public",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
@@ -38,6 +41,13 @@
     ]
   },
   "devDependencies": {
-    "eslint-config-react-app": "6.0.0"
+    "@storybook/addon-actions": "^6.1.8",
+    "@storybook/addon-essentials": "^6.1.8",
+    "@storybook/addon-links": "^6.1.8",
+    "@storybook/node-logger": "^6.1.8",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.8",
+    "eslint-config-react-app": "6.0.0",
+    "patch-package": "^6.2.2"
   }
 }

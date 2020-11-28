@@ -1,0 +1,13 @@
+diff --git a/node_modules/@storybook/preset-create-react-app/dist/helpers/getReactScriptsPath.js b/node_modules/@storybook/preset-create-react-app/dist/helpers/getReactScriptsPath.js
+index 479e09e..4f77618 100644
+--- a/node_modules/@storybook/preset-create-react-app/dist/helpers/getReactScriptsPath.js
++++ b/node_modules/@storybook/preset-create-react-app/dist/helpers/getReactScriptsPath.js
+@@ -31,7 +31,7 @@ exports.getReactScriptsPath = function () {
+          */
+         try {
+             var resolvedBinPath = fs_1.realpathSync(scriptsBinPath);
+-            var scriptsPath = path_1.join(resolvedBinPath, '..', '..');
++            var scriptsPath = path_1.join(resolvedBinPath, '..', '..', 'react-scripts');
+             return scriptsPath;
+         }
+         catch (e) {
