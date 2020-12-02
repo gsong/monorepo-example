@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/gsong/monorepo-example#readme",
   "devDependencies": {
-    "pnpm": "^5.13.4"
+    "pnpm": "^5.13.5"
   }
 }
