@@ -3,8 +3,9 @@
 import * as React from "react";
 import { ThemeProvider, jsx, useThemeUI } from "theme-ui";
 
-import { text, theme } from "./theme.js";
 import Button from "./Button";
+import theme from "./theme";
+import { text } from "./theme/tokens";
 
 const App = () => (
   <ThemeProvider theme={theme}>

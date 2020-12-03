@@ -1,0 +1,23 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+
+import Button from ".";
+
+<Meta title="MDX/Button" component={Button} />
+
+export const Template = (props) => <Button {...props} />;
+
+# Button
+
+This is some eloquent prose about the button:
+
+<Story name="primary01" args={{ children: "hi" }}>
+  {Template.bind({})}
+</Story>
+
+We can drop it in a `Canvas` to get a code snippet:
+
+<Canvas>
+  <Story name="primary02">
+    <Button>Hi</Button>
+  </Story>
+</Canvas>
