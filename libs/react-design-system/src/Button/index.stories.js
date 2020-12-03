@@ -1,13 +1,12 @@
 import Button from ".";
 
-const Story = {
+const Meta = {
   title: "Components/Button",
   component: Button,
 };
 
-const Template = (props) => <Button {...props} />;
+const Template = (props) => <Button {...props}>Hi</Button>;
 
 export const Primary = Template.bind({});
-Primary.args = { children: "Hi" };
 
-export default Story;
+export default Meta;

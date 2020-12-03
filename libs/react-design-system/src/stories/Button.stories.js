@@ -2,7 +2,7 @@ import React from "react";
 
 import { Button } from "./Button";
 
-export default {
+const Meta = {
   title: "Example/Button",
   component: Button,
   argTypes: {
@@ -34,3 +34,5 @@ Small.args = {
   size: "small",
   label: "Button",
 };
+
+export default Meta;
