@@ -29,4 +29,9 @@ export const variants = {
 
     ":hover:enabled": { backgroundColor: "blue.7" },
   },
+
+  secondary: {
+    variant: "button.primary",
+    backgroundColor: "gray.5",
+  },
 };
