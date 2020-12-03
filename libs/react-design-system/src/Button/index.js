@@ -1,9 +1,14 @@
+//@flow strict
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 
-const Button = ({ variant = "primary", ...props }) => (
-  <button sx={{ variant: `button.${variant}` }} {...props} />
+import type { Node } from "react";
+
+type Props = { variant: string, ... };
+
+const Button = ({ variant = "primary", ...props }: Props): Node => (
+  <button sx={{ variant: `button.${variant}` }} {...(props: mixed)} />
 );
 
 export default Button;
