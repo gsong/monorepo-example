@@ -10,6 +10,7 @@ import { text } from "./theme/tokens";
 const App = () => (
   <ThemeProvider theme={theme}>
     <Button>Hi</Button>
+    <Button variant="secondary">There</Button>
     <p sx={text.xl5}>Hello</p>
     <ThemePrinter />
   </ThemeProvider>

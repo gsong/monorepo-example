@@ -9,13 +9,16 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-flow",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-theme-ui",
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: { default: path.resolve("./src/components/layout.js") },
       },
     },
-    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -30,8 +33,6 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
